@@ -1,0 +1,1053 @@
+/* HEADER PRINCIPAL */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.encabezado {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e2f4f3;
+    /* Mantener el header visible al desplazarse */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.contenedor-header {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 85px;
+    margin: auto;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    color: #168b8b;
+    flex-shrink: 0;
+}
+.logo-icono {
+    width: 43px;
+    height: 43px;
+    border-radius: 9px;
+    background-color: #27b8b7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+    font-weight: bold;
+}
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+.logo-texto strong {
+    font-size: 27px;
+    letter-spacing: -1px;
+}
+.logo-texto small {
+    margin-top: 5px;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+.menu a {
+    color: #53646a;
+    text-decoration: none;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 12px 0;
+    transition: color 0.3s;
+}
+.menu a:hover,
+.menu a.activo {
+    color: #1bb3b0;
+    border-bottom: 2px solid #1bb3b0;
+}
+/* BUSCADOR */
+.buscador {
+    display: flex;
+    align-items: center;
+    background-color: #f2f8f8;
+    border-radius: 25px;
+    padding: 5px 8px 5px 14px;
+    border: 1px solid #e1eeee;
+    max-width: 270px;
+    min-width: 180px;
+}
+.buscador input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 9px 0;
+    font-size: 12px;
+}
+.buscador button {
+    border: none;
+    border-radius: 50%;
+    background: #25b8b5;
+    color: white;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+.buscador button:hover {
+    background: #168b8b;
+}
+/* TABLET Y MÓVIL */
+@media (max-width: 1050px) {
+    .contenedor-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        gap: 8px 18px;
+    }
+    .buscador {
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .contenedor-header {
+        padding: 12px;
+    }
+    .menu {
+        width: 100%;
+        gap: 5px 14px;
+    }
+    .menu a {
+        font-size: 13px;
+    }
+    .buscador {
+        width: 100%;
+    }
+}
+
+
+/* =====================================================
+   BANNER PRINCIPAL
+===================================================== */
+
+.banner {
+    width: 100%;
+    height: 285px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+
+    /*
+       LA IMAGEN OCUPA TODO EL BANNER
+    */
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.banner-texto {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding-left: 9%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+.mini-titulo {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.banner h1 {
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    color: #075b63;
+}
+
+.banner h1 span {
+    color: #079b86;
+}
+
+.banner-texto > p:not(.mini-titulo) {
+    font-size: 15px;
+
+    line-height: 21px;
+
+    margin: 12px 0 15px;
+}
+
+.boton {
+    background: #079b86;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #057467;
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.seccion {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 18px 20px;
+}
+
+.titulo-seccion {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+.titulo-seccion h2 {
+    font-size: 18px;
+
+    white-space: nowrap;
+}
+
+.titulo-seccion::after {
+    content: "";
+
+    height: 1px;
+
+    background: #b9dddd;
+
+    flex: 1;
+}
+
+.titulo-seccion a {
+    color: #087b79;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   CATEGORÍAS
+===================================================== */
+
+.categorias {
+    display: grid;
+
+    grid-template-columns:
+        repeat(7, 1fr);
+
+    gap: 20px;
+}
+
+.categoria {
+    height: 125px;
+    width: 180px;
+    background: #effafa;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    color: #075b63;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.categoria-img {
+    width: 100%;
+
+    height: 90px;
+
+    overflow: hidden;
+}
+
+.categoria-img img {
+    width: 100%;
+    height: 100%;
+
+    /*
+       IMAGEN COMPLETA DENTRO DEL DIV
+    */
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.categoria-nombre {
+    height: 35px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.categoria:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+}
+
+
+/* =====================================================
+   PROMOCIONES
+===================================================== */
+
+.promociones {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 18px;
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 18px;
+}
+
+
+/* PANEL 20% */
+
+.promo-principal {
+    width: 100%;
+
+    height: 200pxpx;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+/*
+   ESTA ES LA PARTE MÁS IMPORTANTE.
+
+   LA IMAGEN OCUPA EL 100% DEL PANEL.
+*/
+
+.promo-principal > img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 1;
+}
+
+
+/* TEXTO ENCIMA */
+
+.capa-promo {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 18px 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    z-index: 2;
+}
+
+.capa-promo span {
+    background: #079b86;
+
+    color: white;
+
+    padding: 5px 13px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.capa-promo h2 {
+    font-size: 52px;
+
+    line-height: 48px;
+
+    color: #075b63;
+}
+
+.capa-promo h3 {
+    font-size: 20px;
+
+    line-height: 20px;
+
+    color: #075b63;
+}
+
+.capa-promo p {
+    font-size: 12px;
+
+    margin: 5px 0 8px;
+}
+
+.capa-promo a,
+.capa-consejos a {
+    background: #079b86;
+
+    color: white;
+
+    padding: 8px 17px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================================
+   CONSEJOS
+===================================================== */
+
+.panel-consejos {
+    width: 100%;
+
+    height: 180px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+/*
+   LA IMAGEN DE CONSEJOS TAMBIÉN LLENA TODO
+*/
+
+.panel-consejos > img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 1;
+}
+
+
+.capa-consejos {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    z-index: 2;
+}
+
+.capa-consejos h2 {
+    font-size: 19px;
+
+    color: #075b63;
+
+    margin-bottom: 5px;
+}
+
+.capa-consejos p {
+    font-size: 12px;
+
+    color: #075b63;
+
+    line-height: 17px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =====================================================
+   PRODUCTOS
+===================================================== */
+
+.productos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.producto {
+    border: 2px solid #1d8181;
+
+    border-radius: 15px;
+
+    padding: 10px;
+
+    overflow: hidden;
+
+    background: rgb(249, 251, 252);
+}
+
+.producto-img {
+    height: 115px;
+
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 7px;
+}
+
+.producto-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    object-position: center;
+}
+
+.corazon {
+    position: absolute;
+
+    top: 4px;
+    right: 4px;
+
+    border: none;
+
+    background: white;
+
+    color: #087b79;
+
+    font-size: 21px;
+
+    cursor: pointer;
+}
+
+.producto h3 {
+    font-size: 18px;
+
+    color: #075b63;
+
+    margin-top: 8px;
+}
+
+.producto p {
+    font-size: 16px;
+
+    color: #55787b;
+
+    margin: 2px 0;
+}
+
+.producto strong {
+    display: block;
+
+    color: #079b86;
+
+    font-size: 17px;
+
+    margin: 5px 0 8px;
+}
+
+.producto > a {
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    background: #079b86;
+
+    color: white;
+
+    padding: 8px 5px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   BENEFICIOS
+===================================================== */
+
+.beneficios {
+    width: 100%;
+
+    min-height: 80px;
+
+    background: #eefafa;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    padding: 12px 40px;
+
+    gap: 25px;
+}
+
+.beneficio {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.icono {
+    font-size: 27px;
+}
+
+.beneficio strong {
+    font-size: 11px;
+
+    color: #075b63;
+}
+
+.beneficio p {
+    font-size: 9px;
+
+    color: #54787a;
+
+    margin-top: 3px;
+}
+
+.whatsapp {
+    background: #079b86;
+
+    color: white;
+
+    border-radius: 25px;
+
+    padding: 9px 18px;
+
+    font-size: 11px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.whatsapp small {
+    font-size: 8px;
+
+    margin-top: 2px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background: #004f52;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1fr 1fr 1.5fr 1fr;
+
+    gap: 35px;
+
+    padding: 30px 45px;
+}
+
+.footer-col {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.footer-col h3 {
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+.footer-col a,
+.footer-col p {
+    color: white;
+
+    font-size: 15px;
+}
+
+.logo-footer {
+    position: relative;
+}
+
+.logo-footer-icon {
+    width: 38px;
+    height: 38px;
+
+    background: white;
+
+    color: #079b86;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.logo-footer h2 {
+    font-size: 25px;
+
+    margin-top: -3px;
+}
+
+.logo-footer span {
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+.logo-footer p {
+    margin-top: 8px;
+}
+
+.newsletter input {
+    width: 100%;
+
+    height: 30px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 20px;
+
+    padding: 0 12px;
+}
+
+.newsletter button {
+    height: 30px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #079b86;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 10px;
+}
+
+.footer-frase {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.footer-frase p {
+    font-size: 18px;
+
+    font-style: italic;
+
+    line-height: 25px;
+}
+
+.copyright {
+    background: #003e40;
+
+    color: white;
+
+    padding: 9px 45px;
+
+    font-size: 9px;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .header {
+        padding: 0 20px;
+
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 13px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+    .slogan {
+        display: none;
+    }
+
+    .categorias {
+        grid-template-columns:
+            repeat(4, 1fr);
+    }
+
+    .productos {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .header {
+        height: auto;
+
+        min-height: 70px;
+
+        flex-wrap: wrap;
+
+        padding: 10px 15px;
+    }
+
+    .menu {
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+    .menu a {
+        padding: 10px 0;
+    }
+
+    .busqueda {
+        margin-left: auto;
+    }
+
+    .favoritos {
+        display: none;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .banner-texto {
+        padding-left: 30px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .promociones {
+        grid-template-columns: 1fr;
+    }
+
+    .categorias {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .productos {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .beneficios {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .logo-text strong {
+        font-size: 21px;
+    }
+
+    .busqueda {
+        display: none;
+    }
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner h1 {
+        font-size: 27px;
+    }
+
+    .banner-texto > p:not(.mini-titulo) {
+        font-size: 12px;
+    }
+
+    .categorias {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        flex-direction: column;
+
+        gap: 8px;
+
+        padding: 10px 20px;
+    }
+
+}

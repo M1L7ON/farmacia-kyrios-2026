@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="belleza.css">
+</head>
+<body>
+    
+<header class="encabezado">
+    <div class="contenedor-header">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <span class="logo-icono">✚</span>
+            <span class="logo-texto">
+                <strong>Kyrios</strong>
+                <small>FARMACIA</small>
+            </span>
+        </a>
+
+       <!-- NAVEGACIÓN -->
+       <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="medicamentos.html">Medicamentos</a>
+            <a href="cuidadoper.html">Cuidado personal</a>
+            <a href="cuidadopiel.html">Cuidado de la piel</a>
+            <a href="vitamina.html">Vitaminas y Suplementos</a>
+            <a href="bebes.html">Bebes y mamás</a>
+            <a href="belleza.html">Belleza e Higiene</a>
+          
+        </nav>
+
+        <!-- BUSCADOR -->
+        <form >
+        </form>
+
+    </div>
+</header>
+
+<!-- =====================================================
+     BANNER PRINCIPAL
+===================================================== -->
+
+<section class="banner">
+
+    <img
+        src="imagenes.iniciobn (2).jpeg"
+        alt="Farmacia Kyrios"
+    >
+</section>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido" id="productos">
+        
+        <!-- BUSCADOR FUNCIONAL -->
+        <div class="contenedor-buscador">
+            <span class="icono-busqueda">⌕</span>
+            <input
+                type="search"
+                id="buscarProducto"
+                placeholder="Buscar un medicamento o producto..."
+                autocomplete="off"
+                aria-label="Buscar productos"
+            >
+            <button
+                type="button"
+                id="limpiarBusqueda"
+                class="limpiar"
+                aria-label="Limpiar búsqueda"
+                hidden
+            >✕</button>
+        </div>
+        <p id="mensajeBusqueda" class="mensaje" aria-live="polite"></p>
+
+
+
+
+        <!-- LISTA DE PRODUCTOS -->
+        <div class="productos" id="listaProductos">
+  
+<!-- Producto 1 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft1.jpeg" alt="Pasta Dental Colgate">
+  </a>
+  <div class="datos-producto">
+    <h2>Pasta Dental Colgate</h2>
+    <p>Protección completa contra caries y fortalecimiento del esmalte.</p>
+    <strong class="precio">Bs 18,50</strong>
+  </div>
+</article>
+
+<!-- Producto 2 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft2.jpeg" alt="Cepillo de Dientes Suave">
+  </a>
+  <div class="datos-producto">
+    <h2>Cepillo de Dientes Suave</h2>
+    <p>Limpieza dental profunda y delicada para encías sensibles.</p>
+    <strong class="precio">Bs 7,00</strong>
+  </div>
+</article>
+
+<!-- Producto 3 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft3.jpeg" alt="Hilo Dental">
+  </a>
+  <div class="datos-producto">
+    <h2>Hilo Dental</h2>
+    <p>Elimina placa y restos donde el cepillo no llega.</p>
+    <strong class="precio">Bs 12,00</strong>
+  </div>
+</article>
+
+<!-- Producto 4 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft4.jpeg" alt="Desodorante Antitranspirante">
+  </a>
+  <div class="datos-producto">
+    <h2>Desodorante Antitranspirante</h2>
+    <p>Protección 24 horas, frescura y confianza todo el día.</p>
+    <strong class="precio">Bs 16,00</strong>
+  </div>
+</article>
+
+<!-- Producto 5 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft5.jpeg" alt="Jabón de Manos Líquido">
+  </a>
+  <div class="datos-producto">
+    <h2>Jabón de Manos Líquido</h2>
+    <p>Limpieza suave, elimina gérmenes con agradable aroma.</p>
+    <strong class="precio">Bs 14,00</strong>
+  </div>
+</article>
+
+<!-- Producto 6 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft6.jpeg" alt="Esponja de Baño">
+  </a>
+  <div class="datos-producto">
+    <h2>Esponja de Baño</h2>
+    <p>Exfoliación suave, mejora la limpieza y deja la piel suave.</p>
+    <strong class="precio">Bs 8,50</strong>
+  </div>
+</article>
+
+<!-- Producto 7 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft7.jpeg" alt="Cortauñas con Lima">
+  </a>
+  <div class="datos-producto">
+    <h2>Cortauñas con Lima</h2>
+    <p>Corte y cuidado completo de uñas de manos y pies.</p>
+    <strong class="precio">Bs 11,00</strong>
+  </div>
+</article>
+
+<!-- Producto 8 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft8.jpeg" alt="Crema de Afeitar Mujer">
+  </a>
+  <div class="datos-producto">
+    <h2>Crema de Afeitar Mujer</h2>
+    <p>Suaviza el vello, protege y suaviza la piel al depilar.</p>
+    <strong class="precio">Bs 19,00</strong>
+  </div>
+</article>
+
+<!-- Producto 9 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft9.jpeg" alt="Espuma de Baño">
+  </a>
+  <div class="datos-producto">
+    <h2>Espuma de Baño</h2>
+    <p>Limpieza suave, relajante y con fragancia duradera.</p>
+    <strong class="precio">Bs 22,00</strong>
+  </div>
+</article>
+
+<!-- Producto 10 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft10.jpeg" alt="Kit de Manicura">
+  </a>
+  <div class="datos-producto">
+    <h2>Kit de Manicura</h2>
+    <p>Todo lo necesario para cuidar tus uñas en casa.</p>
+    <strong class="precio">Bs 25,00</strong>
+  </div>
+</article>
+
+<!-- Producto 11 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft11.jpeg" alt="Lima de Uñas">
+  </a>
+  <div class="datos-producto">
+    <h2>Lima de Uñas</h2>
+    <p>Da forma y suaviza los bordes de tus uñas con precisión.</p>
+    <strong class="precio">Bs 5,50</strong>
+  </div>
+</article>
+
+<!-- Producto 12 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft12.jpeg" alt="Quitaesmalte">
+  </a>
+  <div class="datos-producto">
+    <h2>Quitaesmalte</h2>
+    <p>Elimina el esmalte de forma suave y rápida.</p>
+    <strong class="precio">Bs 13,00</strong>
+  </div>
+</article>
+
+<!-- Producto 13 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft14.jpeg" alt="Esmalte Tradicional">
+  </a>
+  <div class="datos-producto">
+    <h2>Esmalte Tradicional</h2>
+    <p>Color brillante y duradero para tus uñas.</p>
+    <strong class="precio">Bs 9,00</strong>
+  </div>
+</article>
+
+<!-- Producto 14 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft14.jpeg" alt="Aceite para Cutícula">
+  </a>
+  <div class="datos-producto">
+    <h2>Aceite para Cutícula</h2>
+    <p>Suaviza y nutre la piel alrededor de tus uñas.</p>
+    <strong class="precio">Bs 15,00</strong>
+  </div>
+</article>
+
+<!-- Producto 15 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft15.jpeg" alt="Rellenador de Uñas">
+  </a>
+  <div class="datos-producto">
+    <h2>Rellenador de Uñas</h2>
+    <p>Fortalece uñas débiles, quebradizas y con manchas.</p>
+    <strong class="precio">Bs 21,00</strong>
+  </div>
+</article>
+
+<!-- Producto 16 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft16.jpeg" alt="Desodorante en Barra">
+  </a>
+  <div class="datos-producto">
+    <h2>Desodorante en Barra</h2>
+    <p>Fácil aplicación, frescor y protección duradera.</p>
+    <strong class="precio">Bs 14,50</strong>
+  </div>
+</article>
+
+<!-- Producto 17 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft17.jpeg" alt="Jabón Íntimo">
+  </a>
+  <div class="datos-producto">
+    <h2>Jabón Íntimo</h2>
+    <p>Higiene delicada con pH balanceado, cuida tu zona íntima.</p>
+    <strong class="precio">Bs 23,00</strong>
+  </div>
+</article>
+
+<!-- Producto 18 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft18.jpeg" alt="Toallitas Desmaquillantes">
+  </a>
+  <div class="datos-producto">
+    <h2>Toallitas Desmaquillantes</h2>
+    <p>Elimina maquillaje e impurezas de forma práctica y suave.</p>
+    <strong class="precio">Bs 16,00</strong>
+  </div>
+</article>
+
+<!-- Producto 19 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft19.jpeg" alt="Gorro de Baño">
+  </a>
+  <div class="datos-producto">
+    <h2>Gorro de Baño</h2>
+    <p>Protege tu cabello del agua mientras te bañas.</p>
+    <strong class="precio">Bs 7,50</strong>
+  </div>
+</article>
+
+<!-- Producto 20 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-belleza20.jpeg" alt="Pinzas Depilar">
+  </a>
+  <div class="datos-producto">
+    <h2>Pinzas Depilar</h2>
+    <p>Precisión para dar forma a tus cejas y eliminar vello.</p>
+    <strong class="precio">Bs 10,00</strong>
+  </div>
+</article>
+
+<!-- Producto 21 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft21.jpeg" alt="Secante de Uñas">
+  </a>
+  <div class="datos-producto">
+    <h2>Secante de Uñas</h2>
+    <p>Acelera el secado del esmalte y evita marcas.</p>
+    <strong class="precio">Bs 12,00</strong>
+  </div>
+</article>
+
+<!-- Producto 22 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft22.jpeg" alt="Brillo Labial Hidratante">
+  </a>
+  <div class="datos-producto">
+    <h2>Brillo Labial Hidratante</h2>
+    <p>Da un toque de color sutil e hidrata tus labios.</p>
+    <strong class="precio">Bs 14,00</strong>
+  </div>
+</article>
+
+<!-- Producto 23 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft23.jpeg" alt="Maquinilla de Afeitar Desechable">
+  </a>
+  <div class="datos-producto">
+    <h2>Maquinilla de Afeitar Desechable</h2>
+    <p>Depilación práctica, suave y segura en cualquier momento.</p>
+    <strong class="precio">Bs 6,00</strong>
+  </div>
+</article>
+
+<!-- Producto 24 -->
+<article class="producto">
+  <span class="categoria">Belleza e Higiene</span>
+  <a href="#buscabelleza" class="imagen-producto">
+    <img src="img-bellezaft24.jpeg" alt="Bálsamo Labial Protector">
+  </a>
+  <div class="datos-producto">
+    <h2>Bálsamo Labial Protector</h2>
+    <p>Hidrata profundamente y protege tus labios del clima.</p>
+    <strong class="precio">Bs 8,50</strong>
+  </div>
+</article>
+
+
+        </div>
+
+
+
+
+
+        <div id="sinResultados" class="sin-resultados" hidden>
+            <span>⌕</span>
+            <h2>No se encontraron productos</h2>
+            <p>Prueba con otro nombre, por ejemplo: Paracetamol.</p>
+            <button type="button" id="verTodos" class="boton">
+                Ver todos los productos
+            </button>
+        </div>
+    </main>
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+    <div><span>♡</span><p><strong>Productos originales</strong><br>Calidad y confianza</p></div>
+    <div><span>♙</span><p><strong>Atención personalizada</strong><br>Estamos para ayudarte</p></div>
+    <div><span>◷</span><p><strong>Horario de atención</strong><br>Lun - Dom: 08:00 a 22:00</p></div>
+   
+  </footer>
+
+
+  
+    <!-- JAVASCRIPT DEL BUSCADOR -->
+    <script>
+        const buscador = document.getElementById("buscarProducto");
+        const productos = Array.from(
+            document.querySelectorAll(".producto")
+        );
+        const mensaje = document.getElementById("mensajeBusqueda");
+        const sinResultados = document.getElementById("sinResultados");
+        const limpiar = document.getElementById("limpiarBusqueda");
+        const lista = document.getElementById("listaProductos");
+        const verTodos = document.getElementById("verTodos");
+        // Ignora mayúsculas y tildes
+        function normalizar(texto) {
+            return texto
+                .toLocaleLowerCase("es")
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .trim();
+        }
+        function buscarProductos() {
+            const consulta = normalizar(buscador.value);
+            let encontrados = 0;
+            productos.forEach(function(producto) {
+                const contenido = normalizar(producto.innerText);
+                const coincide = contenido.includes(consulta);
+                producto.hidden = !coincide;
+                if (coincide) {
+                    encontrados++;
+                }
+            });
+            limpiar.hidden = buscador.value.length === 0;
+            sinResultados.hidden = encontrados !== 0;
+            lista.hidden = encontrados === 0;
+            if (consulta === "") {
+                mensaje.textContent = "";
+            } else if (encontrados === 1) {
+                mensaje.textContent = "Se encontró 1 producto.";
+            } else if (encontrados > 1) {
+                mensaje.textContent =
+                    "Se encontraron " + encontrados + " productos.";
+            } else {
+                mensaje.textContent =
+                    "No hay coincidencias para: " + buscador.value;
+            }
+        }
+        function restablecerBusqueda() {
+            buscador.value = "";
+            buscarProductos();
+            buscador.focus();
+        }
+        buscador.addEventListener("input", buscarProductos);
+        limpiar.addEventListener("click", restablecerBusqueda);
+        verTodos.addEventListener("click", restablecerBusqueda);
+    </script>
+</body>
+</html>

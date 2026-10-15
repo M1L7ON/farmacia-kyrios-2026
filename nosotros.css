@@ -1,0 +1,1165 @@
+/* HEADER PRINCIPAL */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.encabezado {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e2f4f3;
+    /* Mantener el header visible al desplazarse */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.contenedor-header {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 85px;
+    margin: auto;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    color: #168b8b;
+    flex-shrink: 0;
+}
+.logo-icono {
+    width: 43px;
+    height: 43px;
+    border-radius: 9px;
+    background-color: #27b8b7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+    font-weight: bold;
+}
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+.logo-texto strong {
+    font-size: 27px;
+    letter-spacing: -1px;
+}
+.logo-texto small {
+    margin-top: 5px;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+.menu a {
+    color: #53646a;
+    text-decoration: none;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 12px 0;
+    transition: color 0.3s;
+}
+.menu a:hover,
+.menu a.activo {
+    color: #1bb3b0;
+    border-bottom: 2px solid #1bb3b0;
+}
+/* BUSCADOR */
+.buscador {
+    display: flex;
+    align-items: center;
+    background-color: #f2f8f8;
+    border-radius: 25px;
+    padding: 5px 8px 5px 14px;
+    border: 1px solid #e1eeee;
+    max-width: 270px;
+    min-width: 180px;
+}
+.buscador input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 9px 0;
+    font-size: 12px;
+}
+.buscador button {
+    border: none;
+    border-radius: 50%;
+    background: #25b8b5;
+    color: white;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+.buscador button:hover {
+    background: #168b8b;
+}
+/* TABLET Y MÓVIL */
+@media (max-width: 1050px) {
+    .contenedor-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        gap: 8px 18px;
+    }
+    .buscador {
+        max-width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .contenedor-header {
+        padding: 12px;
+    }
+    .menu {
+        width: 100%;
+        gap: 5px 14px;
+    }
+    .menu a {
+        font-size: 13px;
+    }
+    .buscador {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ===== CONFIGURACIÓN GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --turquesa: #008b8b;
+    --turquesa-oscuro: #006970;
+    --verde: #12ad78;
+    --fondo: #f0fbf9;
+    --texto: #234653;
+    --blanco: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background: var(--blanco);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ===== ENCABEZADO ===== */
+.header {
+    min-height: 82px;
+    width: 100%;
+    padding: 12px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: var(--blanco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 80, 80, 0.08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: var(--turquesa-oscuro);
+}
+
+.logo-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--verde);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 34px;
+    border-radius: 8px;
+}
+
+.logo strong {
+    display: block;
+    font-size: 29px;
+    line-height: 1.1;
+}
+
+.logo small {
+    display: block;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.activo {
+    background: var(--turquesa-oscuro);
+    color: white;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header-icons a {
+    color: var(--turquesa-oscuro);
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.header-icons a:hover {
+    color: var(--verde);
+    transform: translateY(-2px);
+}
+
+
+/* ===== DISTRIBUCIÓN PRINCIPAL ===== */
+.contenido {
+    width: 100%;
+    height: 780px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 3.5%;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr 0.95fr;
+    grid-template-areas:
+        "historia foto contactos"
+        "ubicacion elegirnos contactos"
+        "ubicacion elegirnos imagen";
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.foto-farmacia {
+    grid-area: foto;
+}
+
+.contactos {
+    grid-area: contactos;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+}
+
+.elegirnos {
+    grid-area: elegirnos;
+}
+
+.imagen-salud {
+    grid-area: imagen;
+}
+
+/* ===== TÍTULOS Y SECCIONES ===== */
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.titulo-seccion h2,
+.elegirnos h2 {
+    color: var(--turquesa-oscuro);
+    font-size: clamp(20px, 2vw, 28px);
+    line-height: 1.25;
+}
+
+.icono-circulo {
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 100px;
+    color: var(--turquesa-oscuro);
+    background: #d0f5f0;
+    font-size: 27px;
+}
+
+.historia p,
+.ubicacion p {
+    font-size: 15px;
+    margin-bottom: 14px;
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   BANNER PRINCIPAL
+===================================================== */
+
+.banner {
+    width: 100%;
+    height: 285px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+
+    /*
+       LA IMAGEN OCUPA TODO EL BANNER
+    */
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.banner-texto {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding-left: 9%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+.mini-titulo {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.banner h1 {
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    color: #075b63;
+}
+
+.banner h1 span {
+    color: #079b86;
+}
+
+.banner-texto > p:not(.mini-titulo) {
+    font-size: 15px;
+
+    line-height: 21px;
+
+    margin: 12px 0 15px;
+}
+
+.boton {
+    background: #079b86;
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #057467;
+}
+
+/* ===== FOTOGRAFÍA DE LA FARMACIA ===== */
+.foto-farmacia {
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: var(--fondo);
+}
+
+.foto-farmacia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.foto-farmacia:hover img {
+    transform: scale(1.04);
+}
+
+/* ===== TARJETA DE CONTACTO ===== */
+.contactos{
+    padding: 15px;
+    height: 600px;
+     background: linear-gradient(145deg, #e9f9f7, #abd0da);
+     border-radius: 16px;
+}
+.ubicacion {
+    background: linear-gradient(145deg, #e9f9f7, #abd0da);
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.contactos .titulo-seccion {
+    margin-bottom: 18px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 15px 0;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+a.contacto-item:hover {
+    color: var(--turquesa);
+}
+
+.contacto-item strong {
+    color: var(--turquesa-oscuro);
+    display: inline-block;
+    margin-bottom: 3px;
+    padding: 13px;
+    font-size: 20px;
+}
+.letra{
+    font-size: 13px;
+}
+
+.contacto-icono {
+    width: 43px;
+    height: 43px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--turquesa);
+    color: rgb(165, 78, 78);
+    font-size: 19px;
+}
+
+.contacto-icono.whatsapp {
+    background: var(--verde);
+}
+
+/* ===== MAPA ===== */
+.mapa {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 15px 0;
+    background: #e6f3f0;
+    padding: 0%;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.boton-mapa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background: var(--turquesa-oscuro);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.boton-mapa:hover {
+    background: var(--verde);
+}
+
+/* ===== POR QUÉ ELEGIRNOS ===== */
+.elegirnos {
+    padding: 25px 5px;
+}
+
+.elegirnos h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+.elegirnos h2 i {
+    font-size: 25px;
+}
+
+.elegirnos ul {
+    list-style: none;
+}
+
+.elegirnos li {
+    position: relative;
+    padding-left: 32px;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.elegirnos li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 3px;
+    
+    color: #12a65c;
+}
+
+.frase {
+    text-align: center;
+    color: var(--turquesa-oscuro);
+    font-size: clamp(21px, 2.3vw, 29px);
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 28px;
+}
+
+.frase span {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+
+/* ===== PIE DE PÁGINA ===== */
+.footer {
+    width: 100%;
+    min-height: 305px;
+    padding: 24px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    background: linear-gradient(
+        110deg,
+        #006970,
+        #008b8b
+    );
+    color: white;
+}
+
+.logo-footer {
+    color: white;
+}
+
+.logo-footer .logo-icon {
+    background: white;
+    color: var(--turquesa);
+}
+
+.footer > p {
+    font-size: 14px;
+}
+
+.redes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.redes a {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: white;
+    color: var(--turquesa-oscuro);
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    background: #c9f5eb;
+    transform: translateY(-3px);
+}
+
+.direccion-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1050px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+    }
+
+    .contenido {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "historia foto"
+            "ubicacion contactos"
+            "elegirnos imagen";
+    }
+
+    .foto-farmacia {
+        height: 100%;
+        min-height: 280px;
+    }
+}
+
+/* ===== CELULARES ===== */
+@media (max-width: 650px) {
+    .header {
+        padding: 12px 4%;
+        gap: 12px;
+    }
+
+    .logo strong {
+        font-size: 24px;
+    }
+
+    .logo-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+    }
+
+    .header-icons {
+        gap: 14px;
+    }
+
+    .navbar {
+        gap: 4px;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .banner {
+        min-height: 175px;
+    }
+
+    .contenido {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "historia"
+            "foto"
+            "contactos"
+            "ubicacion"
+            "elegirnos"
+            "imagen";
+        padding: 20px 16px;
+        gap: 22px;
+    }
+
+    .foto-farmacia {
+        height: 260px;
+        min-height: 0;
+    }
+
+    .contactos,
+    .ubicacion {
+        padding: 18px;
+    }
+
+    .mapa {
+        height: 260px;
+    }
+
+    .imagen-salud {
+        height: 240px;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .direccion-footer {
+        justify-content: center;
+    }
+}
+
+
+
+/* FOOTER GENERAL */
+.footer-kyrios {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        100deg,
+        #004b49,
+        #00645e,
+        #004744
+    );
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* CONTENIDO PRINCIPAL */
+.footer-principal {
+    width: 100%;
+    min-height: 82px;
+    padding: 14px 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.logo-icono {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.logo-texto h2 {
+    font-size: 19px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.logo-texto span {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.logo-texto p {
+    font-size: 10px;
+    margin: 3px 0 0;
+}
+
+/* SERVICIOS */
+.footer-servicio {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex-shrink: 0;
+}
+
+.footer-servicio .icono {
+    font-size: 23px;
+    color: #d8ffff;
+}
+
+.footer-servicio h4,
+.footer-whatsapp h4 {
+    font-size: 15px;
+    margin: 0 0 4px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.footer-servicio p,
+.footer-whatsapp p {
+    font-size: 11px;
+    margin: 0;
+    color: #d1e8e6;
+    white-space: nowrap;
+}
+
+/* BOTÓN WHATSAPP */
+.footer-whatsapp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 13px;
+    border-radius: 30px;
+    background: #00a989;
+    color: white;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background 0.3s ease;
+}
+
+.footer-whatsapp:hover {
+    background: #00c49c;
+}
+
+.footer-whatsapp > span {
+    font-size: 20px;
+}
+
+.footer-whatsapp h4 {
+    font-size: 8px;
+}
+
+.footer-whatsapp p {
+    font-size: 7px;
+}
+
+/* DECORACIÓN */
+.footer-hoja {
+    font-size: 32px;
+    color: #1ab69a;
+}
+
+/* BARRA INFERIOR */
+.footer-inferior {
+    min-height: 28px;
+    padding: 9px 3.5%;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+.footer-inferior p,
+.footer-enlaces a,
+.footer-enlaces span {
+    font-size: 8px;
+    margin: 0;
+    color: #d1e8e6;
+}
+
+.footer-enlaces {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.footer-enlaces a {
+    text-decoration: none;
+}
+
+.footer-enlaces a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* EVITAR ESPACIOS LATERALES */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ADAPTACIÓN PARA TABLETS */
+@media (max-width: 1000px) {
+    .footer-principal {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px 30px;
+        padding: 22px 4%;
+    }
+
+    .footer-logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-hoja {
+        display: none;
+    }
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 600px) {
+    .footer-principal {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .footer-logo {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .footer-servicio {
+        width: 100%;
+    }
+
+    .footer-whatsapp {
+        max-width: 100%;
+    }
+
+    .footer-inferior {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 14px 20px;
+    }
+
+    .footer-inferior p {
+        font-size: 9px;
+    }
+
+    .footer-enlaces {
+        flex-wrap: wrap;
+    }
+
+    .footer-enlaces a,
+    .footer-enlaces span {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+/* ADAPTACIÓN A TABLET */
+@media (max-width: 1100px) {
+    .header {
+        flex-wrap: wrap;
+    }
+    .nav {
+        order: 5;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .buscador {
+        margin-left: auto;
+    }
+    .promos-inferiores {
+        grid-template-columns: 1fr;
+    }
+}
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 760px) {
+    .header {
+        gap: 12px;
+    }
+    .eslogan {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+        margin-left: auto;
+        border: none;
+        background: var(--menta);
+        color: var(--verde);
+        padding: 9px 12px;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+    }
+    .nav.mostrar {
+        display: flex;
+    }
+    .nav a {
+        padding: 12px;
+    }
+    .buscador {
+        width: 100%;
+        order: 10;
+    }
+    .banner {
+        min-height: 300px;
+        background-position: center;
+    }
+    .banner-texto {
+        width: 85%;
+        padding: 25px;
+    }
+    .banner h1 {
+        font-size: clamp(27px, 6vw, 42px);
+    }
+    .frase-banner {
+        right: 4%;
+        font-size: 13px;
+    }
+    .tarjetas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .reto {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .habitos {
+        min-width: 100%;
+    }
+    .footer-contenido {
+        flex-wrap: wrap;
+    }
+}
+/* CELULARES PEQUEÑOS */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 21px;
+    }
+    .banner {
+        min-height: 320px;
+    }
+    .banner-texto {
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(90deg, #003b3155, transparent);
+    }
+    .banner p {
+        font-size: 12px;
+    }
+    .frase-banner {
+        display: none;
+    }
+    .destacados {
+        padding: 20px 12px;
+    }
+    .titulo-seccion {
+        align-items: flex-start;
+    }
+    .titulo-seccion h2 {
+        font-size: 18px;
+    }
+    .titulo-seccion p {
+        font-size: 10px;
+    }
+    .titulo-seccion > a {
+        font-size: 9px;
+    }
+    .tarjetas {
+        gap: 9px;
+    }
+    .tarjeta-contenido {
+        padding: 8px;
+    }
+    .tarjeta h3 {
+        font-size: 12px;
+    }
+    .tarjeta p {
+        font-size: 9px;
+    }
+    .promos-inferiores {
+        padding: 0 12px 18px;
+    }
+    .footer-contenido {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 22px;
+    }
+}

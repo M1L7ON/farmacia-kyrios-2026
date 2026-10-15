@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cuidadoper.css">
+</head>
+<body>
+    
+<header class="encabezado">
+    <div class="contenedor-header">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <span class="logo-icono">✚</span>
+            <span class="logo-texto">
+                <strong>Kyrios</strong>
+                <small>FARMACIA</small>
+            </span>
+        </a>
+
+       <!-- NAVEGACIÓN -->
+       <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="medicamentos.html">Medicamentos</a>
+            <a href="cuidadoper.html">Cuidado personal</a>
+            <a href="cuidadopiel.html">Cuidado de la piel</a>
+            <a href="vitamina.html">Vitaminas y Suplementos</a>
+            <a href="bebes.html">Bebes y mamás</a>
+            <a href="belleza.html">Belleza e Higiene</a>
+          
+        </nav>
+
+        <!-- BUSCADOR -->
+        <form >
+        </form>
+
+    </div>
+</header>
+
+<!-- =====================================================
+     BANNER PRINCIPAL
+===================================================== -->
+
+<section class="banner">
+
+    <img
+        src="imagenes.iniciobn (2).jpeg"
+        alt="Farmacia Kyrios"
+    >
+</section>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido" id="productos">
+        
+        <!-- BUSCADOR FUNCIONAL -->
+        <div class="contenedor-buscador">
+            <span class="icono-busqueda">⌕</span>
+            <input
+                type="search"
+                id="buscarProducto"
+                placeholder="Buscar un medicamento o producto..."
+                autocomplete="off"
+                aria-label="Buscar productos"
+            >
+            <button
+                type="button"
+                id="limpiarBusqueda"
+                class="limpiar"
+                aria-label="Limpiar búsqueda"
+                hidden
+            >✕</button>
+        </div>
+        <p id="mensajeBusqueda" class="mensaje" aria-live="polite"></p>
+
+
+
+        <!-- LISTA DE PRODUCTOS -->
+        <div class="productos" id="listaProductos">
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#paracetamol" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft1.jpeg"
+                        alt="Presentación de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Gel de Aloe Vera</h2>
+                    <p>Calma e Hidrata la piel</p>
+                    <strong class="precio">Bs 45,00</strong>
+                   
+                </div>
+            </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#amoxicilina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft2.jpeg"
+                        alt="Productos farmacéuticos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Crema nive soft</h2>
+                    <p>Hidratacion diaria rostro y cuerpo</p>
+                    <strong class="precio">Bs 26,50</strong>
+                
+                </div>
+            </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#antigripal" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft3.jpeg"
+                        alt="Productos para el cuidado de la salud"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Shampoo Dove</h2>
+                    <p>Cabello suave y brillante</p>
+                    <strong class="precio">Bs 32,90</strong>
+                  
+                </div>
+            </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft4.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Jabon liquido corporal dove</h2>
+                    <p>Limpieza suave hidratante</p>
+                    <strong class="precio">Bs 18,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft5.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Desodorante Rexona</h2>
+                    <p>Proteccion 48 horas</p>
+                    <strong class="precio">Bs 14,50</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft6.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Crema corporal nivea</h2>
+                    <p>Hidratacion profunda piel seca</p>
+                    <strong class="precio">Bs 38,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft7.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Cepillo de dientes</h2>
+                    <p>Limpieza dental profunda</p>
+                    <strong class="precio">Bs 6,00</strong>
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft8.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Pasta dental Colgate</h2>
+                    <p>Proteccion contra caries</p>
+                    <strong class="precio">Bs 18,50</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft9.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>EnjuagueBucal listerine</h2>
+                    <p>Elimina bacterias y mal aliento</p>
+                    <strong class="precio">Bs 22,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft10.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Gel antibacterial</h2>
+                    <p>Limpieza de manos sin agua </p>
+                    <strong class="precio">Bs 12,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft11.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Jabon neutro</h2>
+                    <p>Limpieza delicada para piel sensible</p>
+                    <strong class="precio">Bs 9,50</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft12.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Tollitas Humedas</h2>
+                    <p>Limpieza practica en cualquier momento</p>
+                    <strong class="precio">Bs 15,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft13.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Crema de manos </h2>
+                    <p>Hidrata y protegemanos secas</p>
+                    <strong class="precio">Bs 16,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft14.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Talco Corporal</h2>
+                    <p>Refresca y absorbe humedad</p>
+                    <strong class="precio">Bs 8,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft15.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Espuma de afeitar</h2>
+                    <p>Protege la piel al afeitarse </p>
+                    <strong class="precio">Bs 13,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft16.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Aftershave</h2>
+                    <p>Calma la piel despues de afeitar</p>
+                    <strong class="precio">Bs 19,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft17.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Peine de dientes anchos</h2>
+                    <p>Desenreda sin lastimar</p>
+                    <strong class="precio">Bs 7,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft18.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Vinagre de manzana </h2>
+                    <p>Cuidado del cabello y piel</p>
+                    <strong class="precio">Bs 28,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft23.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Aceite de ricino</h2>
+                    <p>Fortalece pestañas, cejas, cabello.</p>
+                    <strong class="precio">Bs 22,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft19.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Aceite de almendras</h2>
+                    <p>Hidratante natural para cabello y pieñ</p>
+                    <strong class="precio">Bs 35,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft20.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Crema para pies</h2>
+                    <p>Suaviza callos y resequedad</p>
+                    <strong class="precio">Bs 24,00</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft21.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Protector labial</h2>
+                    <p>Hidrata y protege los labios</p>
+                    <strong class="precio">Bs 8,50</strong>
+                  
+                </div>
+            </article>
+              </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#buscapina" class="imagen-producto">
+                    <img
+                        src="img-cuidado-perft22.jpeg"
+                        alt="Envase de medicamentos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Papel higenico suave</h2>
+                    <p>Higiene diaria suave </p>
+                    <strong class="precio">Bs 19,00</strong>
+                  
+                </div>
+            </article>
+            <article class="producto">
+                <span class="categoria">Cuidado Personal</span>
+                <a href="#amoxicilina" class="imagen-producto">
+                    <img
+                        src="img-produc-1sun.jpeg"
+                        alt="Productos farmacéuticos"
+                    >
+                </a>
+                <div class="datos-producto">
+                    <h2>Locion After sun </h2>
+                    <p>Calma e hidrata la piel despues de exponer al sol</p>
+                    <strong class="precio">Bs 30,00</strong>
+                   
+                </div>
+            </article>
+        </div>
+        <div id="sinResultados" class="sin-resultados" hidden>
+            <span>⌕</span>
+            <h2>No se encontraron productos</h2>
+            <p>Prueba con otro nombre, por ejemplo: Paracetamol.</p>
+            <button type="button" id="verTodos" class="boton">
+                Ver todos los productos
+            </button>
+        </div>
+    </main>
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+    <div><span>♡</span><p><strong>Productos originales</strong><br>Calidad y confianza</p></div>
+    <div><span>♙</span><p><strong>Atención personalizada</strong><br>Estamos para ayudarte</p></div>
+    <div><span>◷</span><p><strong>Horario de atención</strong><br>Lun - Dom: 08:00 a 22:00</p></div>
+   
+  </footer>
+
+
+  
+    <!-- JAVASCRIPT DEL BUSCADOR -->
+    <script>
+        const buscador = document.getElementById("buscarProducto");
+        const productos = Array.from(
+            document.querySelectorAll(".producto")
+        );
+        const mensaje = document.getElementById("mensajeBusqueda");
+        const sinResultados = document.getElementById("sinResultados");
+        const limpiar = document.getElementById("limpiarBusqueda");
+        const lista = document.getElementById("listaProductos");
+        const verTodos = document.getElementById("verTodos");
+        // Ignora mayúsculas y tildes
+        function normalizar(texto) {
+            return texto
+                .toLocaleLowerCase("es")
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .trim();
+        }
+        function buscarProductos() {
+            const consulta = normalizar(buscador.value);
+            let encontrados = 0;
+            productos.forEach(function(producto) {
+                const contenido = normalizar(producto.innerText);
+                const coincide = contenido.includes(consulta);
+                producto.hidden = !coincide;
+                if (coincide) {
+                    encontrados++;
+                }
+            });
+            limpiar.hidden = buscador.value.length === 0;
+            sinResultados.hidden = encontrados !== 0;
+            lista.hidden = encontrados === 0;
+            if (consulta === "") {
+                mensaje.textContent = "";
+            } else if (encontrados === 1) {
+                mensaje.textContent = "Se encontró 1 producto.";
+            } else if (encontrados > 1) {
+                mensaje.textContent =
+                    "Se encontraron " + encontrados + " productos.";
+            } else {
+                mensaje.textContent =
+                    "No hay coincidencias para: " + buscador.value;
+            }
+        }
+        function restablecerBusqueda() {
+            buscador.value = "";
+            buscarProductos();
+            buscador.focus();
+        }
+        buscador.addEventListener("input", buscarProductos);
+        limpiar.addEventListener("click", restablecerBusqueda);
+        verTodos.addEventListener("click", restablecerBusqueda);
+    </script>
+</body>
+</html>
